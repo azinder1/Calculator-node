@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form id="calculator">
+          <div class="form-group">
+            <label for="number1">1st number:</label>
+            <input id="number1" class="form-control col-md-4" type="text">
+          </div>
+          <div class="form-group">
+            <label for="number2">2nd number:</label>
+            <input id="number2" class="form-control col-md-4" type="text">
+            <div class="radio">
+              <label>
+                <input value="add" name="operator" type="radio" checked>+
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input value="subtract" name="operator" type="radio">-
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input value="multiply" name="operator" type="radio">x
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input value="divide" name="operator" type="radio" >&divide;
+              </label>
+            </div>
+            <button type= "submit" type="button" name="button">Enter</button>
+          </form>
+        </div>
+      </div>
+      <form id='pongify-form'>
+          <label id="goal" for="goal"></label>
+          <button type="submit">Pongify!</button>
+      </form>
+      <ul id="solution"></ul>
+      <form id="signup">
+        <label for="email">Enter your email:</label>
+        <input id="email" type="text">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
