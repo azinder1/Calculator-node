@@ -1,7 +1,6 @@
 var Calculator = require('./../js/pingpong.js').calculatorModule;
 
 $(document).ready(function(){
-  event.preventDefault();
   $('#calculator').submit(function(event){
     event.preventDefault();
     var number1 = parseInt($('#number1').val());

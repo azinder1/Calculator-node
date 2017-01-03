@@ -1,7 +1,6 @@
 var Calculator = require('./../js/pingpong.js').calculatorModule;
 
 $(document).ready(function(){
-  event.preventDefault();
   $('#calculator').submit(function(event){
     event.preventDefault();
     var number1 = parseInt($('#number1').val());
@@ -34,5 +33,23 @@ $(document).ready(function(){
     var email = $('#email').val();
     $('#signup').hide();
     $('#solution').prepend('<p>Thank you, ' + email + ' has been added to our list!</p>');
+  });
+});
+
+$(document).ready(function(){
+  $('#time').text(moment());
+});
+
+var apiKey = require('./../.env').apiKey;
+var Weather = require('./../js/weather.js').weatherModule;
+
+$(document).ready(function() {
+  $('#weatherLocation').click(function() {
+    var city = $('#location').val();
+    $('#location').val("");
+    $('.showWeather').text("The city you have chosen is " + city + ".");
+    $.get('http://api.openweatherm$(document).ready(function() {
+  var currentWeatherObject = new Weather();
+  currentWeatherObject.getWeather();
   });
 });
